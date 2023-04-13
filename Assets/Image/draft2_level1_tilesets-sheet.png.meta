@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee4f7f3448e217743abc6fcc1bcbddcd
+guid: 9a8c8aebacc0c0e45808d5670c981df9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,23 +101,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: draft2_level1_tilesets_0
+      name: draft2_level1_tilesets-sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4d18b1ba702d094d9540e4dccb51ebc
-      internalID: -993797861
+      spriteID: 8786d2d7120e188479bba88532be555c
+      internalID: -1179408535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_1
+      name: draft2_level1_tilesets-sheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -152,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60e0e961ada073d4282da7b4c5e30a18
-      internalID: 149701394
+      spriteID: 662e87af715ed284a96d6a6dee5713b1
+      internalID: -417582179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_2
+      name: draft2_level1_tilesets-sheet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -173,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7803492eda849344baa20d86ffd02bdf
-      internalID: -915353682
+      spriteID: 5a86e90086512694d8cf3cb2df8cdde3
+      internalID: 667112037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_3
+      name: draft2_level1_tilesets-sheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -194,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0aae234c9e20cf64daf983f7b3bbb4b7
-      internalID: -1247695357
+      spriteID: f56764a182b868c45a3c01afc99a60fb
+      internalID: -2050885938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_4
+      name: draft2_level1_tilesets-sheet_4
       rect:
         serializedVersion: 2
         x: 64
@@ -215,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b82d9db2ba2d35145ad23b21eb163ded
-      internalID: -647137405
+      spriteID: 906c7ea3f5fcbe74ebfd9e44fb58c90d
+      internalID: 641379027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_5
+      name: draft2_level1_tilesets-sheet_5
       rect:
         serializedVersion: 2
         x: 80
@@ -236,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c54909dbd6defb4686e66bb263c3bef
-      internalID: -358432153
+      spriteID: d3e0aa5aa1aba5c4389c6208493e0a8e
+      internalID: -841439808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_6
+      name: draft2_level1_tilesets-sheet_6
       rect:
         serializedVersion: 2
         x: 96
@@ -257,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a38d62875bb8e44db727935cc3fe016
-      internalID: -1852096536
+      spriteID: d2a64efee44320f469b4528cfb91347d
+      internalID: -354386602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_7
+      name: draft2_level1_tilesets-sheet_7
       rect:
         serializedVersion: 2
         x: 112
@@ -278,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac0ffedfcaea60c408c09c88c45adde8
-      internalID: 1470909906
+      spriteID: b77a6b4d6d04c664681e11adf01712bf
+      internalID: 317464504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_8
+      name: draft2_level1_tilesets-sheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -299,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a7eb169bd4a4344b9ea934994af064
-      internalID: -1041748922
+      spriteID: f06c393b6f683e24682d9bd652c6db39
+      internalID: -1147268498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_9
+      name: draft2_level1_tilesets-sheet_9
       rect:
         serializedVersion: 2
         x: 16
@@ -320,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b6eb7249c8a899419818d089ade0cc3
-      internalID: -1242986281
+      spriteID: ed3c1a2dc8df9a8428efad045064d029
+      internalID: 1388934341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_10
+      name: draft2_level1_tilesets-sheet_10
       rect:
         serializedVersion: 2
         x: 32
@@ -341,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f77b59352dbca0408e641d7f8f53c37
-      internalID: 2101369116
+      spriteID: 621c87bba36e178458ddad09c29ca642
+      internalID: -913676831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_11
+      name: draft2_level1_tilesets-sheet_11
       rect:
         serializedVersion: 2
         x: 48
@@ -362,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3414024077de591459a5529b2bf2cb67
-      internalID: 833189939
+      spriteID: e726bb8a7424ec2408b8010c77e7dc5d
+      internalID: 1745595198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_12
+      name: draft2_level1_tilesets-sheet_12
       rect:
         serializedVersion: 2
         x: 64
@@ -383,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3aa62496ce1028449aa15801a6ea3b41
-      internalID: 1602314788
+      spriteID: 501008745138bd74d8b7c860ef29b3df
+      internalID: 822004683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_13
+      name: draft2_level1_tilesets-sheet_13
       rect:
         serializedVersion: 2
         x: 80
@@ -404,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40f39ffac0cfb1047ab33eee2ee3bf31
-      internalID: -294093295
+      spriteID: 851c234500f0e0c4986afc41f70aa98d
+      internalID: 372368034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_14
+      name: draft2_level1_tilesets-sheet_14
       rect:
         serializedVersion: 2
         x: 96
@@ -425,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c665235adfd07d04e9bcae1e06074075
-      internalID: -219917673
+      spriteID: 685d17bf4ef771742b9909ba95d5666e
+      internalID: 943019273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_15
+      name: draft2_level1_tilesets-sheet_15
       rect:
         serializedVersion: 2
         x: 112
@@ -446,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5199c69d56387141903592609eb1fb7
-      internalID: 1263815263
+      spriteID: 2be1541b7b6971a4f9a42a52bd1725be
+      internalID: 390475541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_16
+      name: draft2_level1_tilesets-sheet_16
       rect:
         serializedVersion: 2
         x: 0
@@ -467,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89a941ae776bb3a4e9fd952ebf9ac5e9
-      internalID: -885448830
+      spriteID: d1c044c4673e7e04e93046d166a51fb4
+      internalID: 1079183711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_17
+      name: draft2_level1_tilesets-sheet_17
       rect:
         serializedVersion: 2
         x: 16
@@ -488,14 +476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0057cf8ffaf40664581522428f49bb41
-      internalID: 581168214
+      spriteID: 13704b2fd966b214abf71c19cfef3ce6
+      internalID: -1079753618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_18
+      name: draft2_level1_tilesets-sheet_18
       rect:
         serializedVersion: 2
         x: 32
@@ -509,14 +497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d55c4db8af267c439151992e227cb94
-      internalID: 610133799
+      spriteID: c6aaa6e35fc660142b35d0dc0c70e7ab
+      internalID: -1931451045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_19
+      name: draft2_level1_tilesets-sheet_19
       rect:
         serializedVersion: 2
         x: 48
@@ -530,14 +518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee850048eca00d547bad28b148fcd9ac
-      internalID: -739249657
+      spriteID: cb71470f0e921fc4980ea7a9856eb2fd
+      internalID: -1914014807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_20
+      name: draft2_level1_tilesets-sheet_20
       rect:
         serializedVersion: 2
         x: 64
@@ -551,14 +539,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a565aa8b52c18f64e932f2809f1f1dd1
-      internalID: -1880254680
+      spriteID: 3c337ba8b6d91484b8b3b2d329fd6582
+      internalID: -1931935943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_21
+      name: draft2_level1_tilesets-sheet_21
       rect:
         serializedVersion: 2
         x: 80
@@ -572,14 +560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0da33e9db71e77488e3432c7e05a074
-      internalID: -1614104132
+      spriteID: 16a22778e03df954ab9f591f0434921f
+      internalID: -70526759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_22
+      name: draft2_level1_tilesets-sheet_22
       rect:
         serializedVersion: 2
         x: 96
@@ -593,14 +581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fb6761fbf248b34681322d2e3726844
-      internalID: -474218496
+      spriteID: a7b15fdc1f560534fa8a7617d74e2d4a
+      internalID: -1595567787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_23
+      name: draft2_level1_tilesets-sheet_23
       rect:
         serializedVersion: 2
         x: 112
@@ -614,14 +602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fde5449980625a49aee5325c9d6a8a6
-      internalID: 1525720589
+      spriteID: d146e985decf2524dbaaa0718dd955eb
+      internalID: 2103916093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_24
+      name: draft2_level1_tilesets-sheet_24
       rect:
         serializedVersion: 2
         x: 0
@@ -635,14 +623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7c3ce0f4ad7d444680298f1aad12033
-      internalID: -1942720164
+      spriteID: 481a7a6be53f0e84e9b806f2c22aa1b8
+      internalID: -103524000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_25
+      name: draft2_level1_tilesets-sheet_25
       rect:
         serializedVersion: 2
         x: 16
@@ -656,14 +644,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 798ae8644610f3e4da0bb9230af2d0a8
-      internalID: 425892854
+      spriteID: ba2c98066d513c048a54547bae15103b
+      internalID: 176261699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_26
+      name: draft2_level1_tilesets-sheet_26
       rect:
         serializedVersion: 2
         x: 32
@@ -677,14 +665,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1153af42c1a9d54289b2262a8481e57
-      internalID: 1820640244
+      spriteID: 4418b0b2bfbec984bbc8fa700111b307
+      internalID: 1903549704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_27
+      name: draft2_level1_tilesets-sheet_27
       rect:
         serializedVersion: 2
         x: 48
@@ -698,14 +686,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ecfda95c88d10c4c87409d94a6a38fb
-      internalID: -1802746177
+      spriteID: 4733ed9b9b3443540b8af6bd3ece5ee3
+      internalID: 460583318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_28
+      name: draft2_level1_tilesets-sheet_28
       rect:
         serializedVersion: 2
         x: 64
@@ -719,14 +707,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3023e7b4350d3664cac84d6eca8e1209
-      internalID: 2104064644
+      spriteID: 168fdb4dec8f8ba4499edcc8bb71da07
+      internalID: 1035173900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: draft2_level1_tilesets_29
+      name: draft2_level1_tilesets-sheet_29
       rect:
         serializedVersion: 2
         x: 80
@@ -740,8 +728,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd3d1774afdd239449a15018e11e93b9
-      internalID: 691690057
+      spriteID: 89fdb3c0e5fa79544bcfc64b0b9bfd89
+      internalID: 686323938
       vertices: []
       indices: 
       edges: []
@@ -757,36 +745,36 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      draft2_level1_tilesets_27: -1802746177
-      draft2_level1_tilesets_22: -474218496
-      draft2_level1_tilesets_23: 1525720589
-      draft2_level1_tilesets_17: 581168214
-      draft2_level1_tilesets_19: -739249657
-      draft2_level1_tilesets_4: -647137405
-      draft2_level1_tilesets_9: -1242986281
-      draft2_level1_tilesets_21: -1614104132
-      draft2_level1_tilesets_26: 1820640244
-      draft2_level1_tilesets_3: -1247695357
-      draft2_level1_tilesets_1: 149701394
-      draft2_level1_tilesets_0: -993797861
-      draft2_level1_tilesets_16: -885448830
-      draft2_level1_tilesets_29: 691690057
-      draft2_level1_tilesets_15: 1263815263
-      draft2_level1_tilesets_25: 425892854
-      draft2_level1_tilesets_12: 1602314788
-      draft2_level1_tilesets_14: -219917673
-      draft2_level1_tilesets_6: -1852096536
-      draft2_level1_tilesets_13: -294093295
-      draft2_level1_tilesets_7: 1470909906
-      draft2_level1_tilesets_8: -1041748922
-      draft2_level1_tilesets_5: -358432153
-      draft2_level1_tilesets_11: 833189939
-      draft2_level1_tilesets_28: 2104064644
-      draft2_level1_tilesets_2: -915353682
-      draft2_level1_tilesets_20: -1880254680
-      draft2_level1_tilesets_24: -1942720164
-      draft2_level1_tilesets_18: 610133799
-      draft2_level1_tilesets_10: 2101369116
+      draft2_level1_tilesets-sheet_22: -1595567787
+      draft2_level1_tilesets-sheet_26: 1903549704
+      draft2_level1_tilesets-sheet_6: -354386602
+      draft2_level1_tilesets-sheet_1: -417582179
+      draft2_level1_tilesets-sheet_9: 1388934341
+      draft2_level1_tilesets-sheet_23: 2103916093
+      draft2_level1_tilesets-sheet_12: 822004683
+      draft2_level1_tilesets-sheet_18: -1931451045
+      draft2_level1_tilesets-sheet_19: -1914014807
+      draft2_level1_tilesets-sheet_20: -1931935943
+      draft2_level1_tilesets-sheet_14: 943019273
+      draft2_level1_tilesets-sheet_11: 1745595198
+      draft2_level1_tilesets-sheet_15: 390475541
+      draft2_level1_tilesets-sheet_0: -1179408535
+      draft2_level1_tilesets-sheet_4: 641379027
+      draft2_level1_tilesets-sheet_17: -1079753618
+      draft2_level1_tilesets-sheet_21: -70526759
+      draft2_level1_tilesets-sheet_7: 317464504
+      draft2_level1_tilesets-sheet_2: 667112037
+      draft2_level1_tilesets-sheet_8: -1147268498
+      draft2_level1_tilesets-sheet_5: -841439808
+      draft2_level1_tilesets-sheet_3: -2050885938
+      draft2_level1_tilesets-sheet_10: -913676831
+      draft2_level1_tilesets-sheet_28: 1035173900
+      draft2_level1_tilesets-sheet_13: 372368034
+      draft2_level1_tilesets-sheet_24: -103524000
+      draft2_level1_tilesets-sheet_25: 176261699
+      draft2_level1_tilesets-sheet_29: 686323938
+      draft2_level1_tilesets-sheet_16: 1079183711
+      draft2_level1_tilesets-sheet_27: 460583318
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

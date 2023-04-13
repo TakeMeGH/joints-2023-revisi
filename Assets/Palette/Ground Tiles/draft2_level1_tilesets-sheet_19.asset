@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: draft2_level1_tilesets_13
+  m_Name: draft2_level1_tilesets-sheet_19
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -294093295, guid: ee4f7f3448e217743abc6fcc1bcbddcd, type: 3}
+  m_Sprite: {fileID: -1914014807, guid: 9a8c8aebacc0c0e45808d5670c981df9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
