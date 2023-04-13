@@ -519,7 +519,7 @@ TextureImporter:
       name: draft2_level1_tilesets_19
       rect:
         serializedVersion: 2
-        x: 80
+        x: 48
         y: 80
         width: 16
         height: 16
@@ -540,7 +540,7 @@ TextureImporter:
       name: draft2_level1_tilesets_20
       rect:
         serializedVersion: 2
-        x: 96
+        x: 80
         y: 80
         width: 16
         height: 16
@@ -561,7 +561,7 @@ TextureImporter:
       name: draft2_level1_tilesets_21
       rect:
         serializedVersion: 2
-        x: 112
+        x: 96
         y: 80
         width: 16
         height: 16
@@ -582,8 +582,8 @@ TextureImporter:
       name: draft2_level1_tilesets_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 112
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -603,7 +603,7 @@ TextureImporter:
       name: draft2_level1_tilesets_23
       rect:
         serializedVersion: 2
-        x: 16
+        x: 0
         y: 64
         width: 16
         height: 16
@@ -624,7 +624,7 @@ TextureImporter:
       name: draft2_level1_tilesets_24
       rect:
         serializedVersion: 2
-        x: 32
+        x: 16
         y: 64
         width: 16
         height: 16
@@ -645,7 +645,7 @@ TextureImporter:
       name: draft2_level1_tilesets_25
       rect:
         serializedVersion: 2
-        x: 48
+        x: 32
         y: 64
         width: 16
         height: 16
@@ -666,7 +666,7 @@ TextureImporter:
       name: draft2_level1_tilesets_26
       rect:
         serializedVersion: 2
-        x: 64
+        x: 48
         y: 64
         width: 16
         height: 16
@@ -687,7 +687,7 @@ TextureImporter:
       name: draft2_level1_tilesets_27
       rect:
         serializedVersion: 2
-        x: 80
+        x: 64
         y: 64
         width: 16
         height: 16
@@ -700,6 +700,27 @@ TextureImporter:
       bones: []
       spriteID: d28d5abcc1134ab4f99a6f64b7d46d07
       internalID: -1069641971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draft2_level1_tilesets_28
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70db74bf614915f4abd49184d55b67ef
+      internalID: 662975722
       vertices: []
       indices: 
       edges: []
@@ -738,6 +759,7 @@ TextureImporter:
       draft2_level1_tilesets_8: -1851017609
       draft2_level1_tilesets_5: 493231999
       draft2_level1_tilesets_11: -904765470
+      draft2_level1_tilesets_28: 662975722
       draft2_level1_tilesets_2: 1193701432
       draft2_level1_tilesets_20: -1083225410
       draft2_level1_tilesets_24: 1995711700
