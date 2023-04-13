@@ -158,8 +158,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: afe6dfe173246b644b7595a8d6ac61cf, type: 2}
-  numFlashClip: 12
-  flashDuration: 3
+  numFlashClip: 6
+  flashDuration: 1.5
   spriteRenderer: {fileID: 709130748}
 --- !u!212 &400717480
 SpriteRenderer:
@@ -240,6 +240,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 505968715126645789, guid: 7fe1a42d31477d2458f6f6838f417592, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 505968715126645790, guid: 7fe1a42d31477d2458f6f6838f417592, type: 3}
       propertyPath: playerTransform
       value: 
@@ -426,6 +430,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 400717473}
+    - target: {fileID: 8174262500998958162, guid: 589336082f8974f419ac48916582b8c2, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 589336082f8974f419ac48916582b8c2, type: 3}
 --- !u!1001 &3756804857420588986
@@ -439,6 +447,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 400717473}
+    - target: {fileID: 450177532122660755, guid: 77793a0b99328554285a87ef55fa548e, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4746545345809758047, guid: 77793a0b99328554285a87ef55fa548e, type: 3}
       propertyPath: m_Name
       value: ShotgunGreenEnemy
@@ -504,6 +516,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 400717473}
+    - target: {fileID: 3611183255938351619, guid: 84a177b301844f34ba7ad5d9ca684e24, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8502171345067772623, guid: 84a177b301844f34ba7ad5d9ca684e24, type: 3}
       propertyPath: m_Name
       value: ShotgunBlueEnemy
@@ -569,6 +585,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 400717473}
+    - target: {fileID: 792430362, guid: ee8e7932249268d4592edbfb236c71d7, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5179218474519435724, guid: ee8e7932249268d4592edbfb236c71d7, type: 3}
       propertyPath: m_Mass
       value: 10000
@@ -686,6 +706,10 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 400717473}
+    - target: {fileID: 6202960418769457015, guid: aeaf4890bfcb1de46b0269fc7c86c5d6, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aeaf4890bfcb1de46b0269fc7c86c5d6, type: 3}
 --- !u!1001 &6815401986137467329
@@ -695,6 +719,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2453707430993630840, guid: 0b8746e2ec4e5004dacf006b5c5a74ba, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2453707430993630843, guid: 0b8746e2ec4e5004dacf006b5c5a74ba, type: 3}
       propertyPath: playerTransform
       value: 
@@ -760,14 +788,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82451779, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 455430365, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 981569020, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
       propertyPath: upperBody
       value: 
       objectReference: {fileID: 709130745}
+    - target: {fileID: 1539698004, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243485610460328899, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1823061858617060699, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1837443304878268388, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 3199213290254135973, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
       propertyPath: cam
       value: 
@@ -784,6 +832,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 5608122463885188063, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5706009866008855352, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
       propertyPath: cam
       value: 
@@ -792,6 +844,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8048637075928411703, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8194194044374248897, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -864,6 +920,14 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8281739035791953265, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8298408345124704551, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: bulletSpeed
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 8407268663578679525, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
       propertyPath: cam
       value: 
@@ -929,6 +993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RifleGreenEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8978060097898996477, guid: a6ad6c46de63bc643806a42d42fc1f00, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8978060097898996478, guid: a6ad6c46de63bc643806a42d42fc1f00, type: 3}
       propertyPath: playerTransform
       value: 
@@ -993,6 +1061,10 @@ PrefabInstance:
     - target: {fileID: 4191596591238636656, guid: 3b23520ee8bb51c4e98ff663df7acc9a, type: 3}
       propertyPath: m_Name
       value: ShotgunOrangeEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064564243101789372, guid: 3b23520ee8bb51c4e98ff663df7acc9a, type: 3}
+      propertyPath: bulletSpeed
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 9064564243101789375, guid: 3b23520ee8bb51c4e98ff663df7acc9a, type: 3}
       propertyPath: playerTransform
