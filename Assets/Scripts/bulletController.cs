@@ -6,7 +6,7 @@ public class bulletController : MonoBehaviour
 {
     Animator animator;
     float speed = 30f;
-    public float duration = 1f;
+    private float duration = 1f;
     int isDead = 1;
     public bool isPlayerShooting;
     // Start is called before the first frame update
@@ -31,6 +31,14 @@ public class bulletController : MonoBehaviour
             animator.SetTrigger("isDesytroy");
             Destroy(gameObject, 0.3f);
         }
+    }
+
+    public void setSpeed(float updSpeed){
+        speed = updSpeed;
+    }
+
+    public void setDuration(float updDuration){
+        duration = updDuration;
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if((isPlayerShooting && other.gameObject.tag == "enemy") || (other.gameObject.tag == "player" && isPlayerShooting == false)){
