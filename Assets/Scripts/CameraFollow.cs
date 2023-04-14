@@ -7,6 +7,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] Transform target;
     [SerializeField]float followSpeed = 0.125f;
+    
     // Update is called once per frame
     void LateUpdate()
     {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class EnemyBulletSpawn : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class EnemyBulletSpawn : MonoBehaviour
     float lastShot = 0;
     [SerializeField] int gunType;
     EnemyHandleAiming enemyHandleAiming;
+    [SerializeField] AIPath aIPath;
    
     // Start is called before the first frame update
     void Start()
@@ -24,27 +26,30 @@ public class EnemyBulletSpawn : MonoBehaviour
     {
         lastShot -= Time.deltaTime;
         gunEndPosition = transform.Find("gunEndPosition");
-        if(gunType == 0){
-            if(lastShot <= 0){
-                lastShot = 0.4f;
-                Fire(enemyHandleAiming.angle);
+        if(aIPath.reachedDestination){
+            if(gunType == 0){
+                if(lastShot <= 0){
+                    lastShot = 0.4f;
+                    Fire(enemyHandleAiming.angle);
+                }
+            }
+            else if(gunType == 1){
+                if(lastShot <= 0){
+                    lastShot = 0.2f;
+                    Fire(enemyHandleAiming.angle);
+                }
+            }
+            else if(gunType == 2){
+                if(lastShot <= 0){
+                    lastShot = 0.4f;                
+                    Fire(enemyHandleAiming.angle, 0.5f);
+                    Fire(enemyHandleAiming.angle + 15, 0.5f);
+                    Fire(enemyHandleAiming.angle - 15, 0.5f);              
+                }
+                
             }
         }
-        else if(gunType == 1){
-            if(lastShot <= 0){
-                lastShot = 0.2f;
-                Fire(enemyHandleAiming.angle);
-            }
-        }
-        else if(gunType == 2){
-            if(lastShot <= 0){
-                lastShot = 0.4f;                
-                Fire(enemyHandleAiming.angle, 0.5f);
-                Fire(enemyHandleAiming.angle + 15, 0.5f);
-                Fire(enemyHandleAiming.angle - 15, 0.5f);              
-            }
-            
-        }
+      
     }
     void Fire(float angle, float duration = 2f){
         GameObject bulletSpawn = Instantiate(bullet, gunEndPosition.position, gun.transform.rotation);
