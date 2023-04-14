@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class EnemyWalkController : MonoBehaviour
 {
     private Animator animator;
     // [SerializeField] PlayerController playerController;
     Vector2 moveDir;
+    [SerializeField] AIPath aIPath;
+    
 
     private void Awake() {
         animator = GetComponent<Animator>();
@@ -18,7 +21,7 @@ public class EnemyWalkController : MonoBehaviour
     }
 
     private void Update() {
-        moveDir = Vector2.zero;
+        moveDir = aIPath.desiredVelocity;
     }
     // Update is called once per frame
     private void FixedUpdate() {

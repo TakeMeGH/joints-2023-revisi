@@ -41,7 +41,9 @@ public class bulletController : MonoBehaviour
         duration = updDuration;
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        if((isPlayerShooting && other.gameObject.tag == "enemy") || (other.gameObject.tag == "player" && isPlayerShooting == false)){
+        string otherTag = other.gameObject.tag;
+        if((isPlayerShooting && otherTag == "enemy") || (otherTag == "player" && isPlayerShooting == false) || 
+        otherTag == "rock" || otherTag == "wall"){
             isDead = 0;
             animator.SetTrigger("isDesytroy");
             Destroy(gameObject, 0.3f);
