@@ -559,6 +559,8 @@ GameObject:
   - component: {fileID: 1193650526}
   - component: {fileID: 1193650525}
   - component: {fileID: 1193650524}
+  - component: {fileID: 1193650529}
+  - component: {fileID: 1193650528}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -650,6 +652,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1193650528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193650523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3fbbdfd48cb274fa8fa230b7e4be1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 1878765854}
+  delay: 2.7
+--- !u!114 &1193650529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193650523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3fbbdfd48cb274fa8fa230b7e4be1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 1884158767}
+  delay: 2.7
 --- !u!1 &1878765854
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +692,6 @@ GameObject:
   - component: {fileID: 1878765858}
   - component: {fileID: 1878765857}
   - component: {fileID: 1878765856}
-  - component: {fileID: 1878765859}
   m_Layer: 5
   m_Name: '[BTN] Exit'
   m_TagString: Button
@@ -773,19 +802,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878765854}
   m_CullTransparentMesh: 1
---- !u!114 &1878765859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1878765854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3fbbdfd48cb274fa8fa230b7e4be1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 1878765854}
 --- !u!1 &1884158767
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,7 +814,6 @@ GameObject:
   - component: {fileID: 1884158771}
   - component: {fileID: 1884158770}
   - component: {fileID: 1884158769}
-  - component: {fileID: 1884158772}
   m_Layer: 5
   m_Name: '[BTN] Retry'
   m_TagString: Button
@@ -909,16 +924,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884158767}
   m_CullTransparentMesh: 1
---- !u!114 &1884158772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884158767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd3fbbdfd48cb274fa8fa230b7e4be1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 1884158767}

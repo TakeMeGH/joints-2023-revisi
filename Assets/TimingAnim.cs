@@ -6,12 +6,13 @@ using UnityEngine.UI;
 public class TimingAnim : MonoBehaviour
 {
     public GameObject btn;
+    public float delay;
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
         btn.SetActive(false);
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(delay);
         btn.SetActive(true);
     }
 }
