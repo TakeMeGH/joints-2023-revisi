@@ -11,6 +11,7 @@ public class bulletSpawn : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] float bulletSpeed = 30f;
     [SerializeField] weaponAmmo weaponAmmo;
+    [SerializeField] Animator reloadAnimator;
     Transform gunEndPosition;
     float lastShot = 0;
     int gunType;
@@ -75,9 +76,8 @@ public class bulletSpawn : MonoBehaviour
     }
 
     private IEnumerator reloadGun(){
-        // animator something
-        yield return new WaitForSeconds(1f);
-        // panggil fungsi reload;
+        reloadAnimator.SetTrigger("reload");
+        yield return new WaitForSeconds(1.2f);
         weaponAmmo.reloadGun(gunType);
         reloadRoutine = null;
     }
