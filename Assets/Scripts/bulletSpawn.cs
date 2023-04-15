@@ -9,6 +9,7 @@ public class bulletSpawn : MonoBehaviour
     public GameObject gun;
     public gunController gunController;
     [SerializeField] GameObject bullet;
+    [SerializeField] float bulletSpeed = 30f;
     Transform gunEndPosition;
     float lastShot = 0;
     int gunType;
@@ -29,42 +30,30 @@ public class bulletSpawn : MonoBehaviour
         if(gunType == 0){
             if(Input.GetKeyDown(KeyCode.Mouse0) && lastShot <= 0){
                 lastShot = 0.2f;
-                Fire();
+                Fire(handleAiming.angle);
             }
         }
         else if(gunType == 1){
             if(Input.GetKey(KeyCode.Mouse0) && lastShot <= 0){
                 lastShot = 0.2f;
-                Fire();
+                Fire(handleAiming.angle);
             }
         }
         else if(gunType == 2){
             if(Input.GetKeyDown(KeyCode.Mouse0) && lastShot <= 0){
-                lastShot = 0.2f;                
-                GameObject bulletSpawn = Instantiate(bullet, gunEndPosition.position, gun.transform.rotation);
-                bulletSpawn.GetComponent<bulletController>().isPlayerShooting = true; 
-                bulletSpawn.GetComponent<bulletController>().setRotation(gun.transform);  
-                bulletSpawn.GetComponent<bulletController>().duration = 0.25f;              
-                float angle = handleAiming.angle;
-
-                bulletSpawn = Instantiate(bullet, gunEndPosition.position, gun.transform.rotation);
-                bulletSpawn.GetComponent<bulletController>().isPlayerShooting = true; 
-                bulletSpawn.GetComponent<bulletController>().rotateBullet(Quaternion.Euler(0, 0, angle - 25));
-                bulletSpawn.GetComponent<bulletController>().duration = 0.25f;              
-
-                bulletSpawn = Instantiate(bullet, gunEndPosition.position, gun.transform.rotation);
-                bulletSpawn.GetComponent<bulletController>().isPlayerShooting = true; 
-                bulletSpawn.GetComponent<bulletController>().rotateBullet(Quaternion.Euler(0, 0, angle + 25));
-                bulletSpawn.GetComponent<bulletController>().duration = 0.25f;              
-
+                lastShot = 0.2f;       
+                Fire(handleAiming.angle, 0.25f);
+                Fire(handleAiming.angle + 15, 0.25f);
+                Fire(handleAiming.angle - 15, 0.25f);           
             }
             
         }
     }
-    void Fire(){
+    void Fire(float angle, float duration = 1f){
         GameObject bulletSpawn = Instantiate(bullet, gunEndPosition.position, gun.transform.rotation);
-        bulletSpawn.GetComponent<bulletController>().setRotation(gun.transform);
+        bulletSpawn.GetComponent<bulletController>().rotateBullet(Quaternion.Euler(0, 0, angle));
         bulletSpawn.GetComponent<bulletController>().isPlayerShooting = true; 
-
+        bulletSpawn.GetComponent<bulletController>().setDuration(duration);
+        bulletSpawn.GetComponent<bulletController>().setSpeed(bulletSpeed);
     }
 }

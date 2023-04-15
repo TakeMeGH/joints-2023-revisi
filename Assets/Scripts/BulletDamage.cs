@@ -20,7 +20,9 @@ public class BulletDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag == "enemy" || other.gameObject.tag == "player"){
-            if(other.gameObject.tag == "player" && other.gameObject.GetComponent<playerInvrunrable>().isInvrunrable()){}
+            if(other.gameObject.tag == "player" && other.gameObject.GetComponent<playerInvrunrable>().isInvrunrable()){
+                other.gameObject.GetComponent<PlayerHealth>().reducePlayerHP(0);
+            }
 
             else if(other.gameObject.GetComponent<PlayerHealth>().getPlayerColor() == bulletColor){
                 other.gameObject.GetComponent<PlayerHealth>().reducePlayerHP(bulletDamage);
