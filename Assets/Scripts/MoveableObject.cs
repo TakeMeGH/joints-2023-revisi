@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class MoveableObject : MonoBehaviour
 {
     [SerializeField]float followSpeed = 0.125f;
     Rigidbody2D rb;
     bool alreadyHover = false;
+    [SerializeField] GameObject astarPathFinding;
 
     private void OnMouseOver() {
         if(Input.GetMouseButton(1)){
@@ -27,6 +29,8 @@ public class MoveableObject : MonoBehaviour
         if(Input.GetMouseButton(1)){
             if(alreadyHover){
                 rb.velocity =  followSpeed * (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+                AstarPath.active.UpdateGraphs (gameObject.GetComponent<Collider2D>().bounds);
+
             }
         }
         else{
