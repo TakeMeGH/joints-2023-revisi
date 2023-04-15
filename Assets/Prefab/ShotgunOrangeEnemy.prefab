@@ -81,7 +81,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 4191596591754838248}
   bullet: {fileID: 2414526283186462921, guid: 27f6ff88b52bff5478804fa2e5ddcc03, type: 3}
+  bulletSpeed: 15
   gunType: 2
+  aIPath: {fileID: 7987341973342719935}
 --- !u!114 &9064564243101789375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,9 +109,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4191596591238636623}
   - component: {fileID: 4191596591238636620}
-  - component: {fileID: 4191596591238636621}
   - component: {fileID: 4869324109950775547}
   - component: {fileID: 9064564243164788860}
+  - component: {fileID: 5814030861463037823}
+  - component: {fileID: 7987341973342719935}
+  - component: {fileID: 1159830732319048900}
   m_Layer: 0
   m_Name: ShotgunOrangeEnemy
   m_TagString: enemy
@@ -147,7 +151,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -156,20 +160,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4191596591238636621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4191596591238636656}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76cfe5b373cc8694daa224227f7139c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  moveDir: {x: 0, y: 0}
 --- !u!114 &4869324109950775547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +200,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 4.2}
   m_EdgeRadius: 0
+--- !u!114 &5814030861463037823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4191596591238636656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &7987341973342719935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4191596591238636656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+  radius: 0.5
+  height: 2
+  canMove: 1
+  maxSpeed: 10
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 1
+  enableRotation: 0
+  autoRepath:
+    mode: 2
+    interval: 0.5
+    sensitivity: 10
+    maximumInterval: 2
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 25
+  pickNextWaypointDist: 2
+  endReachedDistance: 20
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
+--- !u!114 &1159830732319048900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4191596591238636656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 0}
 --- !u!1 &4191596591296032399
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c40269c6c9d43d4c84ce4933e8da5e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aIPath: {fileID: 7987341973342719935}
 --- !u!1 &4191596591754838248
 GameObject:
   m_ObjectHideFlags: 0
