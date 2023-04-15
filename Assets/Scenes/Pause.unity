@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 1071166440}
   - component: {fileID: 1071166439}
   m_Layer: 5
-  m_Name: EXIT
+  m_Name: '[BTN] EXIT'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 1420505787}
   - component: {fileID: 1420505786}
   m_Layer: 5
-  m_Name: MAIN MENU
+  m_Name: '[BTN] MAIN MENU'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
