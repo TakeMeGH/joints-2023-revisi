@@ -8,13 +8,20 @@ public class EnemyBulletSpawn : MonoBehaviour
     public GameObject gun;
     [SerializeField] GameObject bullet;
     [SerializeField] float bulletSpeed = 30f;
+    [SerializeField] weaponAmmo weaponAmmo;
+
 
     Transform gunEndPosition;
     float lastShot = 0;
     [SerializeField] int gunType;
     EnemyHandleAiming enemyHandleAiming;
     [SerializeField] AIPath aIPath;
-   
+    Coroutine reloadRoutine;
+    
+    private void OnEnable() {
+        reloadRoutine = null;
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,31 +31,41 @@ public class EnemyBulletSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(reloadRoutine != null) return;
         lastShot -= Time.deltaTime;
         gunEndPosition = transform.Find("gunEndPosition");
-        if(aIPath.reachedDestination){
-            if(gunType == 0){
-                if(lastShot <= 0){
-                    lastShot = 0.4f;
-                    Fire(enemyHandleAiming.angle);
-                }
-            }
-            else if(gunType == 1){
-                if(lastShot <= 0){
-                    lastShot = 0.2f;
-                    Fire(enemyHandleAiming.angle);
-                }
-            }
-            else if(gunType == 2){
-                if(lastShot <= 0){
-                    lastShot = 0.4f;                
-                    Fire(enemyHandleAiming.angle, 0.5f);
-                    Fire(enemyHandleAiming.angle + 15, 0.5f);
-                    Fire(enemyHandleAiming.angle - 15, 0.5f);              
-                }
-                
-            }
+        if(Input.GetKeyDown(KeyCode.R)){
+            reloadRoutine = StartCoroutine(reloadGun());
         }
+        else if(weaponAmmo.getAmmo(gunType) <= 0){
+            reloadRoutine = StartCoroutine(reloadGun());
+        }
+        else if(aIPath.reachedDestination){
+                if(gunType == 0){
+                    if(lastShot <= 0){
+                        weaponAmmo.reduceAmmo(gunType);
+                        lastShot = 0.4f;
+                        Fire(enemyHandleAiming.angle);
+                    }
+                }
+                else if(gunType == 1){
+                    if(lastShot <= 0){
+                        weaponAmmo.reduceAmmo(gunType);
+                        lastShot = 0.2f;
+                        Fire(enemyHandleAiming.angle);
+                    }
+                }
+                else if(gunType == 2){
+                    if(lastShot <= 0){
+                        weaponAmmo.reduceAmmo(gunType);
+                        lastShot = 0.4f;                
+                        Fire(enemyHandleAiming.angle, 0.5f);
+                        Fire(enemyHandleAiming.angle + 15, 0.5f);
+                        Fire(enemyHandleAiming.angle - 15, 0.5f);              
+                    }
+                    
+                }
+            }
       
     }
     void Fire(float angle, float duration = 2f){
@@ -57,5 +74,13 @@ public class EnemyBulletSpawn : MonoBehaviour
         bulletSpawn.GetComponent<bulletController>().isPlayerShooting = false; 
         bulletSpawn.GetComponent<bulletController>().setDuration(duration);
         bulletSpawn.GetComponent<bulletController>().setSpeed(bulletSpeed);
+    }
+
+    private IEnumerator reloadGun(){
+        // animator something
+        yield return new WaitForSeconds(2f);
+        // panggil fungsi reload;
+        weaponAmmo.reloadGun(gunType);
+        reloadRoutine = null;
     }
 }

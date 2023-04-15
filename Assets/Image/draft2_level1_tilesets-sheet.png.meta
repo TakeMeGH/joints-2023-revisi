@@ -101,6 +101,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -734,6 +746,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: draft2_level1_tilesets-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af95374b840963b41ae651ba0bbd9d4e
+      internalID: 174372295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draft2_level1_tilesets-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d439d824ede0b4a976e7c50f464a15
+      internalID: -1475613723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draft2_level1_tilesets-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5f9cdb2fbf891419388359f88659e8
+      internalID: -650248220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draft2_level1_tilesets-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82272de53cdaa534eb0db59f8a341976
+      internalID: -266519147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draft2_level1_tilesets-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0effa7a1a75b4c64386ff3c905fa0991
+      internalID: -2054287795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -750,6 +867,7 @@ TextureImporter:
       draft2_level1_tilesets-sheet_6: -354386602
       draft2_level1_tilesets-sheet_1: -417582179
       draft2_level1_tilesets-sheet_9: 1388934341
+      draft2_level1_tilesets-sheet_32: -650248220
       draft2_level1_tilesets-sheet_23: 2103916093
       draft2_level1_tilesets-sheet_12: 822004683
       draft2_level1_tilesets-sheet_18: -1931451045
@@ -763,9 +881,12 @@ TextureImporter:
       draft2_level1_tilesets-sheet_17: -1079753618
       draft2_level1_tilesets-sheet_21: -70526759
       draft2_level1_tilesets-sheet_7: 317464504
+      draft2_level1_tilesets-sheet_34: -2054287795
       draft2_level1_tilesets-sheet_2: 667112037
       draft2_level1_tilesets-sheet_8: -1147268498
       draft2_level1_tilesets-sheet_5: -841439808
+      draft2_level1_tilesets-sheet_33: -266519147
+      draft2_level1_tilesets-sheet_31: -1475613723
       draft2_level1_tilesets-sheet_3: -2050885938
       draft2_level1_tilesets-sheet_10: -913676831
       draft2_level1_tilesets-sheet_28: 1035173900
@@ -773,6 +894,7 @@ TextureImporter:
       draft2_level1_tilesets-sheet_24: -103524000
       draft2_level1_tilesets-sheet_25: 176261699
       draft2_level1_tilesets-sheet_29: 686323938
+      draft2_level1_tilesets-sheet_30: 174372295
       draft2_level1_tilesets-sheet_16: 1079183711
       draft2_level1_tilesets-sheet_27: 460583318
   spritePackingTag: 
