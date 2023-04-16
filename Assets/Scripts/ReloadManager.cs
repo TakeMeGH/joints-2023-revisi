@@ -8,9 +8,12 @@ public class ReloadManager : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text _ammoText;
+    [SerializeField] weaponAmmo weaponAmmo;
+    [SerializeField] gunController gunController;
 
     // Start is called before the first frame update
-    public void UpdateAmmo(int count){
-        _ammoText.text += count;
+    private void Update() {
+        string temp = weaponAmmo.getAmmo(gunController.getGunIndex() % 3).ToString();
+        _ammoText.text = temp;
     }
 }
