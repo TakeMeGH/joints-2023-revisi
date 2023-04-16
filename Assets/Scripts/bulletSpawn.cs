@@ -18,6 +18,7 @@ public class bulletSpawn : MonoBehaviour
     handleAiming handleAiming;
     Coroutine reloadRoutine;
     Animator animator;
+    [SerializeField] audioManager audioManager;
    
     private void OnEnable() {
         reloadRoutine = null;
@@ -44,6 +45,7 @@ public class bulletSpawn : MonoBehaviour
         else{
             if(gunType == 0){
                 if(Input.GetKeyDown(KeyCode.Mouse0) && lastShot <= 0){
+                    audioManager.playShoot();
                     weaponAmmo.reduceAmmo(gunType);
                     lastShot = 0.2f;
                     Fire(handleAiming.angle);
@@ -51,6 +53,7 @@ public class bulletSpawn : MonoBehaviour
             }
             else if(gunType == 1){
                 if(Input.GetKey(KeyCode.Mouse0) && lastShot <= 0){
+                    audioManager.playShoot();
                     weaponAmmo.reduceAmmo(gunType);
                     lastShot = 0.2f;
                     Fire(handleAiming.angle);
@@ -58,6 +61,7 @@ public class bulletSpawn : MonoBehaviour
             }
             else if(gunType == 2){
                 if(Input.GetKeyDown(KeyCode.Mouse0) && lastShot <= 0){
+                    audioManager.playShoot();
                     weaponAmmo.reduceAmmo(gunType);
                     lastShot = 0.2f;       
                     Fire(handleAiming.angle, 0.25f);
@@ -76,6 +80,7 @@ public class bulletSpawn : MonoBehaviour
     }
 
     private IEnumerator reloadGun(){
+        audioManager.playReload();
         reloadAnimator.SetTrigger("reload");
         yield return new WaitForSeconds(1.2f);
         weaponAmmo.reloadGun(gunType);
