@@ -6,13 +6,16 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] string playerColor;
     [SerializeField] int playerHP;
+    int maxHp;
     bool isDead = false;
     [SerializeField] bool isPlayer = false;
     GameObject sceneObject;
     SceneHandler sceneHandler;
+    [SerializeField] audioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
+        maxHp = playerHP;
         if(isPlayer){
             sceneObject = GameObject.FindWithTag("SceneHandler");
             sceneHandler = sceneObject.GetComponent<SceneHandler>();
@@ -35,7 +38,10 @@ public class PlayerHealth : MonoBehaviour
             }
             Animator animator = upperBody.GetComponent<Animator>();
             animator.SetTrigger("isDestroy");
-            if(isPlayer) sceneHandler.LoadScene("LosingCondition");
+            if(isPlayer){
+                audioManager.playLosingCondition();
+                sceneHandler.LoadScene("LosingCondition");
+            } 
             Destroy(gameObject, 1.5f);
         }
     }
@@ -45,6 +51,17 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void reducePlayerHP(int damage){
+        if(gameObject.tag == "player" && damage > 0){
+            audioManager.playDead();
+        }
         playerHP -= damage;
+    }
+
+    public int getHealth(){
+        return playerHP;
+    }
+
+    public int getMaxHealth(){
+        return maxHp;
     }
 }

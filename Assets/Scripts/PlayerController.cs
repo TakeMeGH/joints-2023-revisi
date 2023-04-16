@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] Animator animator;
+    [SerializeField] audioManager audioManager;
     public PlayerInputActions playerInputActions;
     public Vector2 moveDir = Vector2.zero;
     private InputAction move;
@@ -46,6 +47,7 @@ public class PlayerController : MonoBehaviour
             moveDir = move.ReadValue<Vector2>();
             if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)){
                 if(curDashCooldown < 0){
+                    audioManager.playDash();
                     dashDir = moveDir;
                     animator.SetTrigger("isDashing");
                     gameObject.GetComponent<playerInvrunrable>().setInvrunrableDuration(0.15f);
