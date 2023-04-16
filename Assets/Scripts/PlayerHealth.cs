@@ -7,10 +7,16 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] string playerColor;
     [SerializeField] int playerHP;
     bool isDead = false;
+    [SerializeField] bool isPlayer = false;
+    GameObject sceneObject;
+    SceneHandler sceneHandler;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(isPlayer){
+            sceneObject = GameObject.FindWithTag("SceneHandler");
+            sceneHandler = sceneObject.GetComponent<SceneHandler>();
+        }
     }
 
     // Update is called once per frame
@@ -29,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
             }
             Animator animator = upperBody.GetComponent<Animator>();
             animator.SetTrigger("isDestroy");
+            if(isPlayer) sceneHandler.LoadScene("LosingCondition");
             Destroy(gameObject, 1.5f);
         }
     }

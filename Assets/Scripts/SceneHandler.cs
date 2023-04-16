@@ -11,6 +11,7 @@ public class SceneHandler : MonoBehaviour
     [SerializeField] public Animator transition;
     [SerializeField] float timeWait = 1f;
     bool isLoading = false;
+    
     // AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
@@ -46,8 +47,9 @@ public class SceneHandler : MonoBehaviour
         sceneHistory.Add(newScene);
         transition.SetTrigger("isCalled");
         yield return new WaitForSeconds(timeWait);
-        isLoading = false;
         SceneManager.LoadScene(newScene);
+        isLoading = false;
+
     }
     public void LoadScene(string newScene)
     {
@@ -57,6 +59,7 @@ public class SceneHandler : MonoBehaviour
     }
 
     public void LoadScene(int newSceneIdx){
+        if(isLoading) return;
         StartCoroutine(transitionScene(newSceneIdx));    
     }
     void Update() {
@@ -102,7 +105,6 @@ public class SceneHandler : MonoBehaviour
     }
 
     public void loadNextLevel(){
-        Debug.Log("test");
         int nextSceneIdx = SceneManager.GetActiveScene().buildIndex + 1;
         LoadScene(nextSceneIdx);
     }
