@@ -183,13 +183,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78015529}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &340624424
 GameObject:
@@ -405,11 +405,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 387196810}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1590275079}
+        m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
+        m_MethodName: loadNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &387196810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,6 +460,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387196807}
   m_CullTransparentMesh: 1
+--- !u!1001 &442359796
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 860936948985380917, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: transition
+      value: 
+      objectReference: {fileID: 689251200}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6644335
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712464896621309947, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950309822130047983, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+      propertyPath: m_Name
+      value: sceneHandler
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+--- !u!95 &689251200 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8928871441986484494, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+  m_PrefabInstance: {fileID: 442359796}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &722668461
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,7 +723,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_HighlightedColor: {r: 0.2, g: 0.17254902, b: 0.17254902, a: 0}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 1}
     m_SelectedColor: {r: 0.6415094, g: 0.46297613, b: 0.46297613, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -662,11 +740,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1398594512}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1651220791}
+        m_TargetAssemblyTypeName: mainMenu, Assembly-CSharp
+        m_MethodName: nextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1398594512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,7 +770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.2, g: 0.17254902, b: 0.17254902, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -840,6 +930,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488489264}
   m_CullTransparentMesh: 1
+--- !u!114 &1590275079 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 860936948985380917, guid: cc7c66533e5acfd4ba10af4d19705f82, type: 3}
+  m_PrefabInstance: {fileID: 442359796}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a1eda69e6365b40ab906b388e3f472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651220786
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +953,7 @@ GameObject:
   - component: {fileID: 1651220789}
   - component: {fileID: 1651220788}
   - component: {fileID: 1651220787}
+  - component: {fileID: 1651220791}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -937,13 +1039,25 @@ RectTransform:
   - {fileID: 387196808}
   - {fileID: 2050902495}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1651220791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651220786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f365091039cba02438c1aad1cfa33589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1665933540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,11 +1213,23 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 2050902497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1651220791}
+        m_TargetAssemblyTypeName: mainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2050902497
 MonoBehaviour:
   m_ObjectHideFlags: 0

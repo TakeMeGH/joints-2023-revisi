@@ -10,6 +10,7 @@ TagManager:
   - Button
   - rock
   - wall
+  - SceneHandler
   layers:
   - Default
   - TransparentFX
