@@ -22291,6 +22291,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 4692676288942271816, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
+      propertyPath: playerHP
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5093938938417788170, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
       propertyPath: cam
       value: 

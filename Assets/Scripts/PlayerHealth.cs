@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Pathfinding;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] string playerColor;
@@ -38,10 +38,17 @@ public class PlayerHealth : MonoBehaviour
             }
             Animator animator = upperBody.GetComponent<Animator>();
             animator.SetTrigger("isDestroy");
+            Destroy(transform.GetComponent<Rigidbody2D>());
             if(isPlayer){
                 audioManager.playLosingCondition();
                 sceneHandler.LoadScene("LosingCondition");
             } 
+            else{
+                Destroy(transform.GetComponent<AIDestinationSetter>());
+                Destroy(transform.GetComponent<AIPath>());
+                Destroy(transform.GetComponent<Seeker>());
+
+            }
             Destroy(gameObject, 1.5f);
         }
     }

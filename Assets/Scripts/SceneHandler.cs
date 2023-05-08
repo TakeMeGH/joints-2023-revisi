@@ -64,7 +64,6 @@ public class SceneHandler : MonoBehaviour
         StartCoroutine(transitionScene(newSceneIdx));    
     }
     void Update() {
-
     }
 
     public bool PreviousScene()
@@ -74,7 +73,7 @@ public class SceneHandler : MonoBehaviour
         {
             returnValue = true;
             sceneHistory.RemoveAt(sceneHistory.Count -1);
-            SceneManager.LoadScene(sceneHistory[sceneHistory.Count -1]);
+            LoadScene(sceneHistory[sceneHistory.Count-1]);
         }
  
         return returnValue;
