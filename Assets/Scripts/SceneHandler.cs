@@ -32,12 +32,14 @@ public class SceneHandler : MonoBehaviour
 
     IEnumerator transitionScene(int newSceneIdx)
     {
-        sceneHistory.Add(SceneManager.GetSceneByBuildIndex(newSceneIdx).name);
         isLoading = true;
         transition.SetTrigger("isCalled");
         yield return new WaitForSeconds(timeWait);
         SceneManager.LoadScene(newSceneIdx);
         isLoading = false;
+        // harus dibawah karena scene harus loaded dahulu untuk getScene
+        sceneHistory.Add(SceneManager.GetSceneByBuildIndex(newSceneIdx).name);
+
 
 
     }
