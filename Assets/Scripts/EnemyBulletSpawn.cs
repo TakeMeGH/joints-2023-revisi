@@ -35,10 +35,7 @@ public class EnemyBulletSpawn : MonoBehaviour
         if(reloadRoutine != null) return;
         lastShot -= Time.deltaTime;
         gunEndPosition = transform.Find("gunEndPosition");
-        if(Input.GetKeyDown(KeyCode.R)){
-            reloadRoutine = StartCoroutine(reloadGun());
-        }
-        else if(weaponAmmo.getAmmo(gunType) <= 0){
+        if(weaponAmmo.getAmmo(gunType) <= 0){
             reloadRoutine = StartCoroutine(reloadGun());
         }
         else if(aIPath.reachedDestination){

@@ -1166,7 +1166,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1193650530}
         m_TargetAssemblyTypeName: mainMenu, Assembly-CSharp
-        m_MethodName: loadMainMenu
+        m_MethodName: loadPreviousScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

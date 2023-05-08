@@ -32,12 +32,14 @@ public class SceneHandler : MonoBehaviour
 
     IEnumerator transitionScene(int newSceneIdx)
     {
-        sceneHistory.Add(SceneManager.GetSceneByBuildIndex(newSceneIdx).name);
         isLoading = true;
         transition.SetTrigger("isCalled");
         yield return new WaitForSeconds(timeWait);
         SceneManager.LoadScene(newSceneIdx);
         isLoading = false;
+        // harus dibawah karena scene harus loaded dahulu untuk getScene
+        sceneHistory.Add(SceneManager.GetSceneByBuildIndex(newSceneIdx).name);
+
 
 
     }
@@ -64,7 +66,6 @@ public class SceneHandler : MonoBehaviour
         StartCoroutine(transitionScene(newSceneIdx));    
     }
     void Update() {
-
     }
 
     public bool PreviousScene()
@@ -74,7 +75,7 @@ public class SceneHandler : MonoBehaviour
         {
             returnValue = true;
             sceneHistory.RemoveAt(sceneHistory.Count -1);
-            SceneManager.LoadScene(sceneHistory[sceneHistory.Count -1]);
+            LoadScene(sceneHistory[sceneHistory.Count-1]);
         }
  
         return returnValue;
