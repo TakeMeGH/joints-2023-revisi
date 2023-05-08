@@ -9,7 +9,7 @@ public class SceneHandler : MonoBehaviour
     private List<string> sceneHistory = new List<string>();  //running history of scenes
     public GameObject[] sceneArray;
     [SerializeField] public Animator transition;
-    [SerializeField] float timeWait = 1f;
+    float timeWait = 0.9f;
     bool isLoading = false;
     
     // AudioSource audioSource;
@@ -25,7 +25,6 @@ public class SceneHandler : MonoBehaviour
         }
         // audioSource.volume = 0.1f;
         // audioSource.Play();
-        Debug.Log("test\n");
         sceneHistory.Add(SceneManager.GetActiveScene().name);
         DontDestroyOnLoad(this.gameObject);
     }
@@ -33,18 +32,20 @@ public class SceneHandler : MonoBehaviour
 
     IEnumerator transitionScene(int newSceneIdx)
     {
+        sceneHistory.Add(SceneManager.GetSceneByBuildIndex(newSceneIdx).name);
+        isLoading = true;
         transition.SetTrigger("isCalled");
         yield return new WaitForSeconds(timeWait);
         SceneManager.LoadScene(newSceneIdx);
-        sceneHistory.Add(SceneManager.GetSceneByBuildIndex(newSceneIdx).name);
+        isLoading = false;
 
 
     }
 
     IEnumerator transitionScene(string newScene)
     {
-        isLoading = true;
         sceneHistory.Add(newScene);
+        isLoading = true;
         transition.SetTrigger("isCalled");
         yield return new WaitForSeconds(timeWait);
         SceneManager.LoadScene(newScene);
