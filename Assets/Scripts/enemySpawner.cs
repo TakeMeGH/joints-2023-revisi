@@ -32,11 +32,6 @@ public class enemySpawner : MonoBehaviour
         if(transform.childCount == 0 && spawnRoutine == null){
             spawnRoutine = StartCoroutine(spawnEnemy());
         }
-        // else{
-        //     if(spawnedEnemy.Count > 0 && spawnedEnemy[0] == null){
-        //         spawnedEnemy.RemoveAt(0);
-        //     }
-        // }
     }
     
     public bool isFinishRunning(){

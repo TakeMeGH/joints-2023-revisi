@@ -25663,7 +25663,8 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 519420031}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1005623949982417493, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d8a148ee4360f74dbd4140f571f6076, type: 3}
 --- !u!1001 &8907545889052425507
 PrefabInstance:

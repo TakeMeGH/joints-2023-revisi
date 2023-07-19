@@ -496,7 +496,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 2199862707715173339, guid: 340d86dda34ff1141b318a932ffe8fa2, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &1561061492121522420
@@ -765,7 +765,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 2199862707715173339, guid: 340d86dda34ff1141b318a932ffe8fa2, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &2935123199518259348
@@ -841,7 +841,6 @@ GameObject:
   - component: {fileID: 5471483054826603541}
   - component: {fileID: 981569020}
   - component: {fileID: 486087555}
-  - component: {fileID: 1005623949982417493}
   m_Layer: 0
   m_Name: weaponList
   m_TagString: Untagged
@@ -887,18 +886,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upperBody: {fileID: 8194194044374248903}
 --- !u!114 &486087555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3521074461498163495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55143fe17d2e0de428987dc0b3c4cfb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1005623949982417493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1008,7 +995,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 2199862707715173339, guid: 340d86dda34ff1141b318a932ffe8fa2, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &5218953680528179520
@@ -1109,7 +1096,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 8186771083993120990, guid: af24d7b12f9240349838832a104e7dcb, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &5898810728422893306
@@ -1498,7 +1485,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 5492570883041075860, guid: d3266ab244a0387468bafa5df51bb04a, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &6528574642015753402
@@ -1736,7 +1723,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 8186771083993120990, guid: af24d7b12f9240349838832a104e7dcb, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &7170998752325461293
@@ -1806,7 +1793,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 8186771083993120990, guid: af24d7b12f9240349838832a104e7dcb, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &7580501077382900715
@@ -1960,7 +1947,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 5492570883041075860, guid: d3266ab244a0387468bafa5df51bb04a, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &7682593943023964791
@@ -2837,7 +2824,7 @@ MonoBehaviour:
   gunController: {fileID: 981569020}
   bullet: {fileID: 5492570883041075860, guid: d3266ab244a0387468bafa5df51bb04a, type: 3}
   bulletSpeed: 30
-  weaponAmmo: {fileID: 1005623949982417493}
+  weaponAmmo: {fileID: 486087555}
   reloadAnimator: {fileID: 792840155763141824}
   audioManager: {fileID: 8960110659220233357}
 --- !u!1 &8392395316149348771
